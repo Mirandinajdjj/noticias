@@ -46,7 +46,7 @@ body.menu-open::before {
 .header-mobile nav {
     position: fixed;
     background-color: var(--almost_white);
-    right: 0;
+    right: -16rem;
     top: 0;
     height: 100vh;
     width: 16rem;
@@ -56,6 +56,11 @@ body.menu-open::before {
     flex-direction: column;
     padding: 1.5rem;
     gap: 1.5rem;
+    transition: 0.7s;
+}
+
+.header-mobile nav abrir {
+    right: 0;    
 }
 
 .header-mobile nav button {
@@ -67,7 +72,7 @@ body.menu-open::before {
     text-decoration: none;
     color:var(--dark-blue);
     font-size: 1.125rem;
-    line-height: 1.5rem;
+    line-height: 1.5rem ;
 }
 
 .primeira-secao {
